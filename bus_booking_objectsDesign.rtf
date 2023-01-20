@@ -1,0 +1,52 @@
+System admin:
+    Attrubites:
+        - username 
+        - password 
+
+    Methods:
+        - login 
+        - add (buses)
+
+SecurityManager:
+    Methods:
+        - login
+FleetManager:
+    Methods:
+        - add (buses)
+RahatBus:
+    Attrubites:
+        -id
+        -type  // enum ["Rahat", "Yoga"]
+        -layout <list of seats>
+        -services ["wifi", "electricity", "coffee"]
+    Methods:
+        -book bussiness 
+        -book economy 
+YogaBus:
+    Attrubites:
+        -id
+        -type  // enum ["Rahat", "Yoga"]
+        -layout <list of seats>
+        -services ["wifi", "electricity", "coffee"]
+    Methods:
+        -book bussiness 
+        -book economy 
+ticket:
+    Attrubites:
+        -number 
+        -Seat 
+        -type ["economic", "business"] //enum
+        -journey // Jorney
+        -issue date
+    Methods:
+Seat:
+    Attrubites:
+        -number 
+        -type
+Jorney:
+    Attrubites:
+        -departure station 
+        -arrival station 
+        -the stations in between 
+        -time of journey
+        
